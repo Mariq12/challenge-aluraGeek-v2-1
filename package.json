@@ -4,12 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npx json-server --watch ./database/db.json --port 3000"
+    "start": "node api/server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
+    "json-serve": "^0.1.0",
     "body-parser": "^1.20.2",
     "express": "^4.19.2",
     "json-server": "^1.0.0-beta.0"
