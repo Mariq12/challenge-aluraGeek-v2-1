@@ -48,11 +48,12 @@ const render = async () => {
     }
 };
 
+// Captura los datos del formulario
 form.addEventListener("submit", async (event) => {
     event.preventDefault();
-    const name = form.querySelector("[data-name]").value;
-    const price = form.querySelector("[data-price]").value;
-    const image = form.querySelector("[data-image]").value;
+    const name = document.querySelector("[data-name]").value;
+    const price = document.querySelector("[data-price]").value;
+    const image = document.querySelector("[data-image]").value;
 
     console.log(name);
     console.log(price);
