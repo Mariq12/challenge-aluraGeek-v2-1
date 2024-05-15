@@ -55,9 +55,9 @@ form.addEventListener("submit", async (event) => {
     const price = document.querySelector("[data-price]").value;
     const image = document.querySelector("[data-image]").value;
 
-    console.log(name);
-    console.log(price);
-    console.log(image);
+    servicesProducts.sendProduct(name, price, image)
+    .then((res) => console.log(res))
+    .catch((err) => console.log(err));
 })
 
 render();
