@@ -28,6 +28,7 @@ function createCard(name, price, image, id) {
 
 const render = async () => {
     try {
+        productContainer.innerHTML = '';
         const listProducts = await servicesProducts.productList();
         if (listProducts && Array.isArray(listProducts)) {
             listProducts.forEach(product => {
@@ -56,7 +57,10 @@ form.addEventListener("submit", async (event) => {
     const image = document.querySelector("[data-image]").value;
 
     servicesProducts.sendProduct(name, price, image)
-    .then((res) => console.log(res))
+    .then((res) => {
+        console.log(res);
+        window.location.reload(); // Recargar la página después de crear un producto
+    })
     .catch((err) => console.log(err));
 });
 
@@ -71,7 +75,7 @@ productContainer.addEventListener("click", async (event) => {
         servicesProducts.deleteProduct(itemId)
             .then(() => {
                 console.log('Producto eliminado con éxito');
-                render(); // Vuelve a renderizar la lista de productos después de eliminar uno
+                window.location.reload(); // Recargar la página después de eliminar un producto
             })
             .catch((err) => console.log(err));
     }

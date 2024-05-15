@@ -1,5 +1,5 @@
 const productList = () => {
-    return fetch("https://challenge-alura-geek-v2-1-o9umg0hq8.vercel.app/api/products")
+    return fetch("https://api-v3-alurageek.vercel.app/api/products")
         .then((res) => {
             if (!res.ok) {
                 throw new Error('Network response was not ok');
@@ -13,7 +13,7 @@ const productList = () => {
 }
 
 const sendProduct = (name, price, image) => {
-    return fetch("https://challenge-alura-geek-v2-1-o9umg0hq8.vercel.app/api/products", {
+    return fetch("https://api-v3-alurageek.vercel.app/api/products", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
@@ -30,7 +30,7 @@ const sendProduct = (name, price, image) => {
 }
 
 const deleteProduct = (id) => {
-    return fetch(`https://challenge-alura-geek-v2-1-o9umg0hq8.vercel.app/api/products/${id}`, {
+    return fetch(`https://api-v3-alurageek.vercel.app/api/products/${id}`, {
         method: "DELETE",
         headers: {
             "Content-Type": "application/json",
