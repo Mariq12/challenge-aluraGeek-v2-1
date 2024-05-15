@@ -7,12 +7,6 @@
       "id": "1"
     },
     {
-      "name": "Laptop Notebook HP 550",
-      "price": "2000",
-      "image": "https://i5.walmartimages.com/asr/57bb38e9-90a1-4532-8f4b-0e76e4538846.b8710b156887abf438daa8aa6905b47d.jpeg",
-      "id": "3"
-    },
-    {
       "name": "pantalon jeans",
       "price": "25",
       "image": "https://yesfashion.ec/cdn/shop/products/Jean-para-mujer-con-rasgados-1_6bee29a5-b610-4364-9b8a-1992bd7560fd_1024x1024.jpg?v=1670801047",
@@ -35,6 +29,12 @@
       "name": "Conjunto jeans",
       "price": "45",
       "image": "https://m.media-amazon.com/images/I/71dqoPxkU8L._AC_UY1000_.jpg"
+    },
+    {
+      "id": "54c5",
+      "name": "Falda rosada",
+      "price": "60",
+      "image": "https://m.media-amazon.com/images/I/61FZ4kjw9DL._AC_UF1000,1000_QL80_.jpg"
     }
   ]
 }

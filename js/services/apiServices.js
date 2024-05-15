@@ -1,5 +1,5 @@
 const productList = () => {
-    return fetch("https://api-v3-alurageek.vercel.app/api/products")
+    return fetch("http://localhost:3000/products")
         .then((res) => {
             if (!res.ok) {
                 throw new Error('Network response was not ok');
@@ -13,7 +13,7 @@ const productList = () => {
 }
 
 const sendProduct = (name, price, image) => {
-    return fetch("https://api-v3-alurageek.vercel.app/api/products", {
+    return fetch("http://localhost:3000/products", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
@@ -30,7 +30,7 @@ const sendProduct = (name, price, image) => {
 }
 
 const deleteProduct = (id) => {
-    return fetch(`https://api-v3-alurageek.vercel.app/api/products/${id}`, {
+    return fetch(`http://localhost:3000/products/${id}`, {
         method: "DELETE",
         headers: {
             "Content-Type": "application/json",
