@@ -58,6 +58,24 @@ form.addEventListener("submit", async (event) => {
     servicesProducts.sendProduct(name, price, image)
     .then((res) => console.log(res))
     .catch((err) => console.log(err));
-})
+});
+
+// Captura el clic en el botón de eliminar
+productContainer.addEventListener("click", async (event) => {
+    event.preventDefault();
+    
+    // Verifica si el elemento clickeado es el ícono de eliminar
+    const removeButton = event.target.closest("[data-remove]");
+    if (removeButton) {
+        const itemId = removeButton.dataset.id;
+        servicesProducts.deleteProduct(itemId)
+            .then(() => {
+                console.log('Producto eliminado con éxito');
+                render(); // Vuelve a renderizar la lista de productos después de eliminar uno
+            })
+            .catch((err) => console.log(err));
+    }
+});
+
 
 render();

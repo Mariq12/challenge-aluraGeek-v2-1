@@ -29,7 +29,20 @@ const sendProduct = (name, price, image) => {
     };
 }
 
+const deleteProduct = (id) => {
+    return fetch(`http://localhost:3000/products/${id}`, {
+        method: "DELETE",
+        headers: {
+            "Content-Type": "application/json",
+        },
+    })
+    .then((res) => res.json())
+    .catch((err) => console.log(err));{
+    };
+}
+
 export const servicesProducts = {
     productList, 
-    sendProduct
+    sendProduct,
+    deleteProduct
 };
