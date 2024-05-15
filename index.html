@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="styles/product-list.css">
     <link rel="stylesheet" href="../styles/register.css">
     <link rel="icon" href="assets/icons/m.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    
     <title>AluraGeek</title>
 
 </head>
@@ -54,20 +57,7 @@
                 Registrar productos
             </h2>
             <form class="main__form" data-form>
-                <fieldset class="form__field">
-                    <label class="field__label" for="image_url">URL de la imagen</label>
-                    <input
-                        name="image_url"
-                        id="image_url"
-                        class="full__field"
-                        type="url"
-                        placeholder="Ingrese la URL de la imagen"
-                        minlength="3"
-                        required
-                        data-url
-                    >
-                    <span class="error-message"></span>
-                </fieldset>
+                
                 <fieldset class="form__field">
                     <label class="field__label" for="name">Nombre</label>
                     <input
@@ -94,6 +84,20 @@
                         minlength="1"
                         required
                         data-price
+                    >
+                    <span class="error-message"></span>
+                </fieldset>
+                <fieldset class="form__field">
+                    <label class="field__label" for="image">URL de la imagen</label>
+                    <input
+                        name="image"
+                        id="image"
+                        class="full__field"
+                        type="url"
+                        placeholder="Ingrese la URL de la imagen"
+                        minlength="3"
+                        required
+                        data-image
                     >
                     <span class="error-message"></span>
                 </fieldset>

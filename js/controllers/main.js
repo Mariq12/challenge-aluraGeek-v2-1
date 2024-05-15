@@ -1,6 +1,7 @@
-import { servicesProducts } from "../services/api-services.js";
+import { servicesProducts } from "../services/apiServices.js";
 
 const productContainer = document.querySelector("[data-product]");
+const form = document.querySelector("[data-form]");
 
 // Función para crear una tarjeta de productos
 function createCard(name, price, image, id) {
@@ -25,7 +26,6 @@ function createCard(name, price, image, id) {
     return card;
 }
 
-
 const render = async () => {
     try {
         const listProducts = await servicesProducts.productList();
@@ -47,5 +47,16 @@ const render = async () => {
         console.error('Error in render function:', error);
     }
 };
+
+form.addEventListener("submit", async (event) => {
+    event.preventDefault();
+    const name = form.querySelector("[data-name]").value;
+    const price = form.querySelector("[data-price]").value;
+    const image = form.querySelector("[data-image]").value;
+
+    console.log(name);
+    console.log(price);
+    console.log(image);
+})
 
 render();

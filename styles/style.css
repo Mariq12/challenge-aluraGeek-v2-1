@@ -21,6 +21,10 @@ body {
     overflow-x: hidden;
 }
 
+h1, h2{
+    font-family: 'Press Start 2P', sans-serif;
+}
+
 /* Estilos para el header */
 header {
     width: 100%;
@@ -39,7 +43,7 @@ header {
 }
 
 .menu__icon {
-    width: 30px; /* Ajusta el ancho según sea necesario */
+    width: 40px; /* Ajusta el ancho según sea necesario */
     height: auto; /* Mantiene la proporción de la imagen */
     margin-right: 10px; /* Espacio entre los iconos */
 }
@@ -47,8 +51,7 @@ header {
 .menu__title {
     flex: 1; /* Ocupa el espacio restante */
     text-align: center;
-    font-size: 34px;
-    font-family: 'Courier New', Courier, monospace;
+    font-size: 26px;
     margin: 0; /* Elimina el margen predeterminado */
     color: var(--cor-de-second-text);
 }
@@ -95,6 +98,7 @@ header {
 h2 {
     color: var(--cor-text-border);
     text-align: center;
+    font-size: 16px;
 }
 
 /* *Sección Footer */

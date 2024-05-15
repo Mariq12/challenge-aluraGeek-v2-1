@@ -8,23 +8,28 @@ const productList = () => {
         })
         .catch((err) => {
             console.error('Error fetching products:', err);
-            throw err; // Re-lanzar el error para que pueda ser manejado en el lugar donde se llama a productList
+            throw err;
         });
 }
 
-export const servicesProducts = {
-    productList
-};
-
-
-
-/*const productList = () => {
-    return fetch("http://localhost:3000/products")
+const sendProduct = (name, price, image) => {
+    return fetch("http://localhost:3000/products", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+            name,
+            price,
+            image,
+        })
+    })
     .then((res) => res.json())
-    .then((err) => console.log(err));
+    .catch((err) => console.log(err));{
+    };
 }
 
 export const servicesProducts = {
-    productList
-}
-*/
+    productList, 
+    sendProduct
+};
