@@ -1,0 +1,117 @@
+:root {
+    --cor-background: #f9f9f9;
+    --con-header: linear-gradient(45deg, #0202b0,#0000e1, #1612ff, #7280ff, #a5b2ff);
+    --cor-de-first-gradient: linear-gradient(135deg,   #c4dcf9 0%, #a5b2ff 15%, #2d53c8 50%, #0202b0 90%, #273e81 100%);
+    --cor-de-second-gradient: linear-gradient(135deg,  #273e81 0%, #0202b0 0%, #2d53c8 50%, #a5b2ff 90%, #c4dcf9 100%);
+    --cor-de-third-gradient: linear-gradient(135deg, #ffc0cb 0%,   #ff94a6 0%, #ff2348 15%, #ff002b 50%, #d70024 90%, #b10320 100%);
+    --cor-de-fourth-gradient: linear-gradient(135deg,  #b10320 0%, #d70024 0%, #ff002b 50%, #ff2348 90%, #ff94a6 100%);
+    --cor-de-second-text: #FFFFFF;
+    --cor-text-border: #0000FF;
+    --cor-de-third-text: #FF0000;
+    --cor-de-text-form:#6f6e6e;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Estilos para el header */
+header {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--con-header);
+    color: var(--cor-de-second-text);
+}
+
+.menu__icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu__icon {
+    width: 30px; /* Ajusta el ancho según sea necesario */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin-right: 10px; /* Espacio entre los iconos */
+}
+
+.menu__title {
+    flex: 1; /* Ocupa el espacio restante */
+    text-align: center;
+    font-size: 34px;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0; /* Elimina el margen predeterminado */
+    color: var(--cor-de-second-text);
+}
+
+.menu__nav {
+    display: block;
+    height: 20%;
+}
+/* Estilo para la lista del menú */
+.menu__list {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: medium;
+    list-style-type: none;
+}
+/* Estilo para los elementos de la lista del menú */
+.menu__list__item {
+    margin-right: 35px;
+}
+.menu__list__item a {
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+.menu__list__item a:hover {
+    color: var(--cor-de-third-text);
+}
+.menu__list__item__header a {
+    margin-right: 45px;
+    color: var(--cor-de-second-text);
+    text-decoration: none;
+}
+
+/* *Estilos para el main */
+.grid-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 20px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    color: var(--cor-text-border);
+    text-align: center;
+}
+
+/* *Sección Footer */
+.footer {
+    font-size: 12px;
+    font-weight: medium;
+    text-align: center;
+    background: var(--con-header);
+    color: var(--cor-de-second-text);
+    padding: 1em 0;
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-container--icon {
+    cursor: pointer;
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/product-list.css">
+    <link rel="stylesheet" href="../styles/register.css">
+    <link rel="icon" href="assets/icons/m.ico">
+    <title>AluraGeek</title>
+
+</head>
+
+<body>
+    <header>
+        <div class="menu__icons">
+            <img class="menu__icon" src="assets/icons/corazon.png" alt="Icono 1">
+            <img class="menu__icon" src="assets/icons/corazon.png" alt="Icono 2">
+            <img class="menu__icon" src="assets/icons/corazon.png" alt="Icono 3">
+            <h1 class="menu__title" >AluraGeek</h1>
+        </div>
+    </header>
+    <main class="grid-container">
+        <!-- Sección de lista de productos -->
+        <section id="list-products" class="homeSide" data-product>
+            <div class="full-width">
+                <h2>Mis Productos</h2>
+            </div>
+            <!--Seccion de Cards-->
+            <!--<section class="product-list">>
+                <article>
+                    <figure class="card" alt="Producto">
+                        <img class="card-container--img" aspect-ratio: auto; height="60px"
+                            src="https://app.pardux.com/render/img-webp/107/premiumtech/Mesa-de-tr-653157614441c"
+                            alt="Producto 1">
+                        <figcaption class="card-container--info">
+                            <p class="card-container--title">Laptop HP 123</p>
+                            <div class="card-container--value">
+                                <p>$ 1060.00</p>
+                                <img class="card-container--icon" src="./assets/icons/borrar.png" data-remove="true"
+                                    data-id="${id}" />
+                            </div>
+                        </figcaption>
+                    </figure>
+                </article>
+            </section>-->
+        </section>
+
+        <!-- Sección de Form -->
+        <section class="registerSide">
+            <h2 class="banner__titulo">
+                Registrar productos
+            </h2>
+            <form class="main__form" data-form>
+                <fieldset class="form__field">
+                    <label class="field__label" for="image_url">URL de la imagen</label>
+                    <input
+                        name="image_url"
+                        id="image_url"
+                        class="full__field"
+                        type="url"
+                        placeholder="Ingrese la URL de la imagen"
+                        minlength="3"
+                        required
+                        data-url
+                    >
+                    <span class="error-message"></span>
+                </fieldset>
+                <fieldset class="form__field">
+                    <label class="field__label" for="name">Nombre</label>
+                    <input
+                        name="name"
+                        id="name"
+                        class="full__field"
+                        type="text"
+                        placeholder="Escriba el nombre del product"
+                        minlength="3"
+                        maxlength="100"
+                        required
+                        data-name
+                    >
+                    <span class="error-message"></span>
+                </fieldset>
+                <fieldset class="form__field">
+                    <label class="field__label" for="price">Precio $</label>
+                    <input
+                        name="price"
+                        id="price"
+                        class="full__field"
+                        type="number"
+                        placeholder="Ingrese el precio del product en dólares"
+                        minlength="1"
+                        required
+                        data-price
+                    >
+                    <span class="error-message"></span>
+                </fieldset>
+                <div class="Form__articulo">
+                    <div class="Form__botones">
+                        <button
+                            value=""
+                            class="Form__boton"
+                            id="send"
+                            type="submit"
+                        >Registrar</button>
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="Form__botones">
+                        <button
+                            value=""
+                            class="Form__boton"
+                            id="delete"
+                            type="submit"
+                        >Eliminar</button>
+                        <span class="error-message"></span>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+    <!-- Sección de Footer -->
+    <section class="footer">
+        <div class= "menu__icons">
+            <img class="menu__icon" src="assets/icons/corazon.png" alt="Icono 1">
+            <img class="menu__icon" src="assets/icons/corazon.png" alt="Icono 2">
+            <img class="menu__icon" src="assets/icons/corazon.png" alt="Icono 3">
+            <h1 class="menu__title" >AluraGeek</h1>
+        </div>
+        <div >
+            <p>Desarrollado por Flor María Labanda Puchaicela</p>
+            <p>Mayo de 2024</p>
+        </div>
+    </section>
+    <script src="js/controllers/main.js" type="module"></script>
+</body>
+
+</html>

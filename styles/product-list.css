@@ -1,0 +1,103 @@
+.homeSide {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 5px;
+    background: var(--cor-background);
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.full-width {
+    grid-column: 1 / -1;
+    /* Ocupa todas las columnas disponibles */
+    text-align: center;
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas para los productos */
+    gap: 10px; /* Espacio entre los productos */
+}
+
+article {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 10px;
+    background: var(--cor-de-first-gradient);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    height: fit-content;
+    border-radius: 20px;
+
+}
+
+/*
+.card {
+    background-color: aqua;
+    color: #ffffff;
+    width: calc(100%/4);
+    padding: 10px;
+    border-radius: 5px;
+    border: 3px solid #000000;
+    display: flex;
+    justify-self: center;
+    flex-direction: column;
+}
+*/
+.card {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    background: var(--cor-background);
+    height: 15rem;
+    height: fit-content;
+    border-radius: 10px 10px 10px 10px;
+    padding: 5px;
+}
+
+.card .card-container--info {
+    color: var(--cor-de-text-form);
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    align-items: center;
+    border-radius: 60px 10px 0 0;
+
+}
+
+.card-container--img {
+    aspect-ratio: 1/1;
+    height: 11rem;
+    border-radius: 10px 10px 0 0;
+
+}
+
+.card-container--title {
+    color: var(--cor-text-border);
+    font-size: 13px;
+    margin-bottom: 0;
+}
+
+.card-container--value {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+
+}
+
+.card-container--value img {
+    transition: transform 0.3s ease;
+}
+
+.card-container--value img:hover {
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 768px) {
+    article {
+        margin:15px;
+    }
+    .card-container--img {
+        aspect-ratio: 1/1;
+        height: 10rem;
+    }
+}
