@@ -1,4 +1,4 @@
-import { servicesProducts } from "../services/apiServices.js";
+import { servicesProducts } from "../services/productServices.js";
 
 const productContainer = document.querySelector("[data-product]");
 const form = document.querySelector("[data-form]");
