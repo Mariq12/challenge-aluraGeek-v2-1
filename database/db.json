@@ -47,6 +47,12 @@
       "name": "Vestido negro",
       "price": "60",
       "image": "https://m.media-amazon.com/images/I/61IzSBYIBNL._AC_UF894,1000_QL80_DpWeblab_.jpg"
+    },
+    {
+      "id": "2f1b",
+      "name": "Vestido negro",
+      "price": "60",
+      "image": "https://m.media-amazon.com/images/I/318HGzt3EcL._AC_SY580_.jpg"
     }
   ]
 }
