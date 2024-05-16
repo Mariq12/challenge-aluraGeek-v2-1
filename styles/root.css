@@ -1,0 +1,13 @@
+:root {
+    --cor-background: #f9f9f9;
+    --con-header: linear-gradient(45deg, #0202b0,#0000e1, #1612ff, #7280ff, #a5b2ff);
+    --cor-de-first-gradient: linear-gradient(135deg,   #c4dcf9 0%, #a5b2ff 15%, #2d53c8 50%, #0202b0 90%, #273e81 100%);
+    --cor-de-second-gradient: linear-gradient(135deg,  #273e81 0%, #0202b0 0%, #2d53c8 50%, #a5b2ff 90%, #c4dcf9 100%);
+    --cor-de-third-gradient: linear-gradient(135deg, #ffc0cb 0%,   #ff94a6 0%, #ff2348 15%, #ff002b 50%, #d70024 90%, #b10320 100%);
+    --cor-de-fourth-gradient: linear-gradient(135deg,  #b10320 0%, #d70024 0%, #ff002b 50%, #ff2348 90%, #ff94a6 100%);
+    --cor-de-second-text: #FFFFFF;
+    --cor-text-border: #0000FF;
+    --cor-de-third-text: #FF0000;
+    --cor-de-text-form:#6f6e6e;
+    --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
