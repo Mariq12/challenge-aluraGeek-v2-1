@@ -7,7 +7,7 @@ En este desafío se desarrollará una aplicación para:
 * eliminar productos
 
 ## Servidor Local
-Este proyecto incluye un servidor local configurado con JSON Server para simular una API REST.
+Este proyecto incluye un servidor local configurado con JSON Server para simular una API REST, por lo cual es necesario descargarlo para probar su funcionamiento.
 
 ### Iniciar el Servidor Local
 
@@ -105,6 +105,29 @@ explicación del código de cada archivo:
 5. **formValidator.js (js/validators/formValidator.js):** Tiene la lógica para verificar la validez de los datos ingresados por el usuario en el formulario de registro de productos.
 
 6. **index.html:** Tiene la estructura básica de la página web y enlaza con los archivos CSS y JavaScript necesarios para mostrar la lista de productos y proporcionar funcionalidad interactiva al usuario.
+
+## Resultado con el servidor local
+
+En el siguiente enlace podra ver el resultado final de la aplicación:
+
+<p align="center">
+  <img src="https://live.staticflickr.com/65535/53726057511_cff9b213e9.jpg" alt="Imagen 1"/>
+</p>
+
+Ver demo con el servidor local: https://challenge-alura-geek-v2-1.vercel.app/
+
+## Resultado con sevidor online
+
+En el siguiente enlace podra ver el resultado final de la aplicación, pero usando la API REST simulada de prueba online alojada en Vercel:
+
+<p align="center"><img src="https://live.staticflickr.com/65535/53726405179_2921e90eed.jpg" alt="Imagen 2"/>
+</p>
+
+Ver demo con el servidor online:       https://challenge-alura-geek-v2-2.vercel.app/
+
+### *Nota*
+
+*Lo unico que cambia entre ambos proyectos solo es la URL de la API REST.*
 
 ## Principales Tecnologías utilizadas
 * HTML5
