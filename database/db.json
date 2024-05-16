@@ -41,6 +41,12 @@
       "name": "Falda a cuadros",
       "price": "30",
       "image": "https://m.media-amazon.com/images/I/81WJEuJV9pL._AC_UY1000_.jpg"
+    },
+    {
+      "id": "ac7e",
+      "name": "Vestido negro",
+      "price": "60",
+      "image": "https://m.media-amazon.com/images/I/61IzSBYIBNL._AC_UF894,1000_QL80_DpWeblab_.jpg"
     }
   ]
 }
