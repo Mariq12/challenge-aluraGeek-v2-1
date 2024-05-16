@@ -79,13 +79,12 @@ Esto iniciará el servidor local, permitiendo acceder a la API REST simulada en 
     |   |   |-- formValidator.js  # Proporciona funciones para validar formularios.
     |-- node_modules         # Contiene las dependencias del proyecto instaladas a través de npm.
     |-- styles/
-    |   |-- product-list.css  # Contiene estilos específicos para la lista de productos.
-    |   |-- register.css     # Estilos del formulario de registro de productos.
-    |   |-- style.css        # Contiene estilos generales aplicados a todo el proyecto.
-    |-- index.html           # Página principal HTML del proyecto.
-    |-- package-lock.json    # Almacena información detallada sobre las versiones
-    |-- package.json         # Gestiona las dependencias del proyecto. 
-    |-- README.md            # Documentación del proyecto que estás leyendo actualmente.
+    |   |-- index.css       # Contiene estilos específicos para la lista de productos y el formulario.
+    |   |-- root.css        # Se definen varias variables CSS.
+    |-- index.html          # Página principal HTML del proyecto.
+    |-- package-lock.json   # Almacena información detallada sobre las versiones
+    |-- package.json        # Gestiona las dependencias del proyecto. 
+    |-- README.md           # Documentación del proyecto que estás leyendo actualmente.
     
 explicación del código de cada archivo:
 
