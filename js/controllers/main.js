@@ -71,7 +71,7 @@ productContainer.addEventListener("click", async (event) => {
         servicesProducts.deleteProduct(itemId)
             .then(() => {
                 console.log('Producto eliminado con éxito');
-                render(); // Vuelve a renderizar la lista de productos después de eliminar uno
+                render(); 
             })
             .catch((err) => console.log(err));
     }
