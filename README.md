@@ -6,29 +6,16 @@ En este desafío se desarrollará una aplicación para:
 * registrar productos
 * eliminar productos
 
-## Métodos HTTP utilizados:
-* GET: para listar productos
-* POST: para registrar productos
-* DELETE: para eliminar productos
----
-## Principales Tecnologías utilizadas
-* HTML5
-* CSS3
-* JAVASCRIPT
----
-## Tecnologías secundaria
-* Node.js y npm (incluyendo node_modules)
-* JSON Server (db.json para simular API)
-* VsCode
-* Git
-* GitHub
----
-## Herramientas de Gestión y Diseño
-* **Trello:** herramienta de colaboración y gestión de proyectos.
-* **Figma:**  se creo un modelo que muestra una representación visual del Alura Geek.
----
-## Comandos utilizados
-Se ejecuta los siguientes comando:
+## Servidor Local
+Este proyecto incluye un servidor local configurado con JSON Server para simular una API REST.
+
+### Iniciar el Servidor Local
+
+Requisitos:
+ 
+* Node.js y npm 
+
+Luego, se ejecuta el siguiente comando en la terminal:
 
     1. npm init
 
@@ -66,8 +53,73 @@ Con este cambio, simplemente se inicia el servidor JSON ejecutando:
 
            npm start
 
-Este comando levantará el servidor JSON y observará el archivo db.json en el puerto 3000.
+Esto iniciará el servidor local, permitiendo acceder a la API REST simulada en http://localhost:3000, y observará el archivo db.json en el puerto 3000 ruta products:
 
----
-##
+        http://localhost:3000/products
+
+### Ejemplos usando la API REST
+* GET http://localhost:3000/products: devuelve una lista de todos los productos disponibles.
+* POST http://localhost:3000/products: para agregar un nuevo producto a la lista.
+* DELETE http://localhost:3000/products/1: para eliminar el producto con el ID  de la lista, por ejemplo ID 1. 
+
+## Estructura del proyecto
+    |-- assets/
+    |   |-- icons/           # Contiene iconos utilizados en el proyecto.
+    |   |-- images/          # Contiene imágenes utilizadas en el proyecto.
+    |-- database/
+    |   |-- db.json          # Actúa como la base de datos simulada para el proyecto.
+    |-- js/
+    |   |-- controllers/     
+    |   |   |-- main.js      # Controla la lógica principal del proyecto, como la renderización de productos.
+    |   |-- err/     
+    |   |   |-- customError.js    # Contiene los mensajes personalizados.
+    |   |-- services/
+    |   |   |-- pproductServices.js  # Contiene funciones que interactúan con una API REST.
+    |   |-- validators/      
+    |   |   |-- formValidator.js  # Proporciona funciones para validar formularios.
+    |-- node_modules         # Contiene las dependencias del proyecto instaladas a través de npm.
+    |-- styles/
+    |   |-- product-list.css  # Contiene estilos específicos para la lista de productos.
+    |   |-- register.css     # Estilos del formulario de registro de productos.
+    |   |-- style.css        # Contiene estilos generales aplicados a todo el proyecto.
+    |-- index.html           # Página principal HTML del proyecto.
+    |-- package-lock.json    # Almacena información detallada sobre las versiones
+    |-- package.json         # Gestiona las dependencias del proyecto. 
+    |-- README.md            # Documentación del proyecto que estás leyendo actualmente.
+    
+explicación del código de cada archivo:
+
+1. **db.json (database/db.json):** Tiene datos de productos en formato JSON que pueden ser consultados y modificados mediante solicitudes HTTP.
+
+2. **main.js (js/controllers/main.js):** Tiene funciones que interactúan con la interfaz de usuario para mostrar la lista de productos y manejar eventos de usuario.
+
+3. **customError.js (js/err/customError.js):** Tiene mensajes personalizados de errores que pueden ser utilizados en la validación de formularios .
+
+4. **productServices.js (js/services/productServices.js):** Tiene funciones que interactúan con una API REST simulada para realizar operaciones relacionadas con productos, como obtener la lista de productos, agregar un nuevo producto y eliminar un producto existente.
+
+    ### Métodos HTTP utilizados:
+    * GET: para listar productos
+    * POST: para registrar productos
+    * DELETE: para eliminar productos
+
+
+5. **formValidator.js (js/validators/formValidator.js):** Tiene la lógica para verificar la validez de los datos ingresados por el usuario en el formulario de registro de productos.
+
+6. **index.html:** Tiene la estructura básica de la página web y enlaza con los archivos CSS y JavaScript necesarios para mostrar la lista de productos y proporcionar funcionalidad interactiva al usuario.
+
+## Principales Tecnologías utilizadas
+* HTML5
+* CSS3
+* JAVASCRIPT
+
+## Tecnologías secundaria
+* Node.js y npm (incluyendo node_modules)
+* JSON Server (db.json para simular API)
+* VsCode
+* Git
+* GitHub
+
+## Herramientas de Gestión y Diseño
+* **Trello:** herramienta de colaboración y gestión de proyectos.
+* **Figma:**  se creo un modelo que muestra una representación visual del Alura Geek.
         
