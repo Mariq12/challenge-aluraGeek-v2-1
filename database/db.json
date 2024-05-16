@@ -35,6 +35,12 @@
       "name": "Falda rosada",
       "price": "60",
       "image": "https://m.media-amazon.com/images/I/61FZ4kjw9DL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+      "id": "84fb",
+      "name": "Falda a cuadros",
+      "price": "30",
+      "image": "https://m.media-amazon.com/images/I/81WJEuJV9pL._AC_UY1000_.jpg"
     }
   ]
 }
