@@ -4,7 +4,7 @@
     grid-gap: 5px;
     background: var(--cor-background);
     padding: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: var(--box-shadow);
 }
 .full-width {
     grid-column: 1 / -1;
@@ -21,12 +21,12 @@ article {
     justify-content: center;
     margin: 10px;
     background: var(--cor-de-first-gradient);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: var(--box-shadow);
     height: fit-content;
     border-radius: 20px;
 }
 .card {
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: var(--box-shadow);
     background: var(--cor-background);
     height: 15rem;
     height: fit-content;
