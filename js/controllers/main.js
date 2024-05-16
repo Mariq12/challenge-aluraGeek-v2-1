@@ -25,7 +25,6 @@ function createCard(name, price, image, id) {
     `;
     return card;
 }
-
 const render = async () => {
     try {
         const listProducts = await servicesProducts.productList();
@@ -44,10 +43,49 @@ const render = async () => {
             console.error('Expected an array of products, but got:', listProducts);
         }
     } catch (error) {
-        console.error('Error in render function:', error);
+        console.error("Error al obtener y mostrar los productos:", error);
+        const errorDiv = document.createElement("div");
+        errorDiv.classList.add("full-width");
+
+        const errorMessage = document.createElement("h3");
+        errorMessage.classList.add("error");
+        errorMessage.textContent = "No fue posible cargar la lista de productos";
+        errorDiv.appendChild(errorMessage);
+        const errorImage = document.createElement("img");
+        errorImage.classList.add("error-image");
+        errorImage.src = "assets/images/sin-conexion.svg";
+        errorImage.alt = "No hay conexión";
+
+        errorDiv.appendChild(errorImage);
+        productContainer.appendChild(errorDiv);
     }
 };
+/*const render = async () => {
+    try {
+        const listProducts = await servicesProducts.productList();
+        if (listProducts && Array.isArray(listProducts)) {
+            listProducts.forEach(product => {
+                productContainer.appendChild(
+                    createCard(
+                        product.name,
+                        product.price,
+                        product.image,
+                        product.id
+                    )
+                );
+            });
+        } else {
+            console.error('Expected an array of products, but got:', listProducts);
+        }
+    } catch (error) {
+        console.error("Error al obtener y mostrar los productos:", error);
+        const mesagge = document.createElement("h2");
+        mesagge.classList.add("mensaje__titulo");
 
+        productContainer.innerHTML = `<h2 class="mensaje__titulo">No fue posible cargar la lista de productos</h2>`;
+    }
+};
+*/
 // Captura los datos del formulario
 form.addEventListener("submit", async (event) => {
     event.preventDefault();

@@ -21,7 +21,7 @@ body {
     min-height: 100vh;
     overflow-x: hidden;
 }
-h1, h2{
+h1, h2, h3{
     font-family: 'Press Start 2P', sans-serif;
 }
 header {
@@ -89,6 +89,14 @@ h2 {
     color: var(--cor-text-border);
     text-align: center;
     font-size: 16px;
+}
+h3 {
+    color: var(--cor-de-third-text);
+    font-size: 14px;
+}
+.error-image {
+    width: 60%;
+    height: auto;
 }
 .card-container--icon {
     cursor: pointer;
