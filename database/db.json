@@ -53,6 +53,12 @@
       "name": "Vestido negro",
       "price": "60",
       "image": "https://m.media-amazon.com/images/I/318HGzt3EcL._AC_SY580_.jpg"
+    },
+    {
+      "id": "cb2f",
+      "name": "Short niña jeans",
+      "price": "80",
+      "image": "https://m.media-amazon.com/images/I/318EB6PmHsL._SR290,290_.jpg"
     }
   ]
 }
