@@ -125,6 +125,7 @@ En el siguiente enlace podra ver el resultado final de la aplicación, pero usan
 
 Ver demo con el servidor online:       https://challenge-alura-geek-v2-2.vercel.app/
 
+URL del repositorio de la API utilizada: https://github.com/Mariq12/api-alurageek-v4
 ### *Nota*
 
 *Lo unico que cambia entre ambos proyectos solo es la URL de la API REST.*
