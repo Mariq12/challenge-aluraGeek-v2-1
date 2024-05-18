@@ -71,6 +71,10 @@ h3 {
 }
 
 /* *Sección Cards */
+#list-products{
+    overflow-y: auto;
+    max-height: 510px;
+}
 .homeSide {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
