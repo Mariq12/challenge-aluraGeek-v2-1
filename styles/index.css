@@ -287,30 +287,20 @@ form {
         background: var(--con-header);
         color: var(--cor-de-second-text);
     }
-
     .menu__icons {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
     }
-
     .menu__icon {
         width: 25px;
         margin-right: 10px;
     }
-
     .menu__title {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
         font-size: 22px;
-        margin: 0;
-        color: var(--cor-de-second-text);
         padding-bottom: 25px;
     }
-
     .grid-container {
         display: grid;
         grid-template-columns: 1fr;
