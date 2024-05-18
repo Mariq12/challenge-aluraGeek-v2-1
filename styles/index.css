@@ -301,6 +301,8 @@ form {
         font-size: 22px;
         padding-bottom: 25px;
     }
+
+    /* *MAIN */
     .grid-container {
         display: grid;
         grid-template-columns: 1fr;
@@ -308,9 +310,13 @@ form {
         width: 100%;
     }
 
+    .registerSide {
+        grid-row: 1;
+    }
+
     #list-products {
+        grid-row: 2;
         width: 90%;
-        grid-column: 1 / 2;
     }
 
     .product-list {
