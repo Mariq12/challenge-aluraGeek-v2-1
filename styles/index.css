@@ -136,6 +136,7 @@ article {
     font-weight: bold;
     align-items: center;
     border-radius: 60px 10px 0 0;
+    width: 100%;
 }
 
 .card-container--title {
